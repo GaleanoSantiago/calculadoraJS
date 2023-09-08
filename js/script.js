@@ -3,6 +3,9 @@ const btnClear = document.getElementById("btn-clear");
 const btnCalculate = document.getElementById("btn-calculate");
 const btnDelete = document.getElementById("btn-delete");
 
+let anchoPantalla = document.body.clientWidth;
+const divAncho = document.getElementById("width");
+divAncho.textContent=anchoPantalla;
 let displayValue = '';
 
 const clearDisplay = ()=> {
