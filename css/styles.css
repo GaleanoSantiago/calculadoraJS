@@ -94,7 +94,7 @@
 
 body {
     display: flex;
-    flex-direction:column;
+    /* flex-direction:column; */
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -206,6 +206,18 @@ body {
     .calculator{
         width:300px;
         padding:20px 15px;
+    }
+    .buttons button {
+        width: 60px;
+        height: 50px;
+        margin: 2px;
+
+    }
+}
+
+@media only screen and (max-width:361px){
+    .calculator{
+        padding:20px 10px;
     }
     .buttons button {
         width: 60px;
