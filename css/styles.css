@@ -1,0 +1,196 @@
+/*-------------------- Estilos creados por Galeano Santiago ------------------*/
+/*---------------------------- Aspectos Generales ----------------------------*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root {
+    --bg: #3C465C;
+    --primary: #78FFCD;
+    --solid: #fff;
+    --celesteClaro:#769ECB;
+    --azulGris:#758f9c;
+    --azulMorado:#516091;
+
+    /*prueba*/
+    --bs-blue: #0d6efd;
+    --bs-indigo-: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --funBlue:#175a9e;
+    --shark:#1e1e1f;
+    --white_1:#f6f7f1;
+    --bg-colorVidrio:rgba(255, 255, 255, .15);
+    --backdrop-filterVidrio:blur(5px);
+    --azulIntenso:#090979;
+    --negroIn:#020024;
+    --rojoOscuro:#C81D11;
+    --rojoBrillante: #FF0800;
+    --celesteBrillante:#00d4ff;
+    --azulFooter:#1b2a4e;
+    --azulNavBar: rgb(17, 0, 255);
+    --blackTitulos:#444649;
+    --greyPs:#616161;
+    --blackYT:#181818;
+    --linesYT:#303030;
+    --blackYT2:#202020;
+    --blackYT3:#313131;
+    --whiteYT:#f9f9f9;
+    --tittlepurple:#1f2667;
+    /* --z1:#232741; */
+    --z1:#0f172a;
+    --z2:#2c2e43;
+    --z3:#222733;
+    --z4:#080d17;
+    --dark-github:#0d1117;
+    --dark-github-2: #161b22;
+    --dark-beauty:#1e242c;
+    --dark-beauty-2:#171925;
+    --dark-brauty-3:#252934;
+
+    /* Colores nuevos */
+    --bs-indigo: #BE1206;
+    --blur-indigo: rgba(74, 52, 169, 0.6);
+
+    --gameBlue: #0f172a; /*15 23 42*/
+    --gameBlueLight: #1e293b; 
+    --gameLips: #be123c; /*190 18 60*/
+    --gameBlood: #BE1206; /*190 18 6*/
+
+    /* colores de HUMAYA */
+    --second:#bca177;
+    --bs-brown:#ac7647;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background-color: #f0f0f0; */
+    /* Gradiente de Verano Tropical: */
+    /* background: linear-gradient(45deg, #FF6B6B, #FFE66D); */
+    /* Gradiente de Océano Profundo: */
+    /* background: linear-gradient(45deg, #007BFF, #00A5FF); */
+    /* Gradiente de Atardecer en el Desierto: */
+    /* background: linear-gradient(45deg, #FFD700, #FF6600); */
+    /* Gradiente de Aurora Boreal: */
+    /* background: linear-gradient(45deg, #8E2DE2, #4A00E0); */
+    /* Gradiente de Selva Tropical: */
+    /* background: linear-gradient(45deg, #2AC8BF, #E1B94E); */
+    /* Gradiente de Atardecer en la Playa: */
+    /* background: linear-gradient(45deg, #FF5733, #FFB423); */
+    /* Gradiente de Espacio Estelar: */
+    background: linear-gradient(45deg, #0A1172, #7F53AC);
+    /* Gradiente de Amanecer en la Montaña: */
+    /* background: linear-gradient(45deg, #FFA07A, #FFD700); */
+
+    /* background: linear-gradient(45deg, #FF5733, #FF6B6B); */
+
+
+
+}
+
+.calculator {
+    border: 1px solid #000;
+    border-radius: 5px;
+    /* background-color: #fff; */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.display {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding:0 10px;
+    background-color: transparent;
+    color:var(--bs-light);
+
+    /* background-color: #f8f8f8; */    
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 10px;
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.buttons button {
+    width: 70px;
+    height: 50px;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    color:var(--bs-light);
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 10px;
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#btn-calculate{
+    /* From https://css.glass */
+    background: rgba(34, 7, 249, 0.40);
+}
+
+#btn-delete{
+    /* From https://css.glass */
+    background: rgba(249, 7, 7, 0.40);
+}
+
+.btn-symbol{
+    background: rgba(120, 14, 183, 0.50) !important;
+}
+
+#btn-clear{
+    background: rgba(255, 125, 47, 0.50);
+
+}
